@@ -1,0 +1,129 @@
+@import 
+  url('https://fonts.googleapis.com/css?family=Lato');
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0px;
+  --red: #D02111;
+  --gray: #E0E0E0;
+  --lgray: #c0c0c0;
+  --white: #FFF;
+  --beige: #F1ECE3;
+  --black: #1D1D25;
+  --teal: #50B0AE;
+  color: var(--black, #1D1D25);
+}
+#header {
+  margin: auto;
+  background: var(--black, #1D1D25);
+}
+#title {
+  text-align: center;
+  color: var(--white, white);
+  padding: 10px;
+}
+#description {
+  text-align: center;
+  background: var(--red, #D02111);
+  color: var(--beige, #F1ECE3);
+  padding: 5px;
+}
+#survey-form {
+  max-width: 700px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.23);
+  background: var(--gray, #E0E0E0);
+}
+h2 {
+  font-size: 15px; 
+  background: var(--teal, #50B0AE);
+  color: var(--white, white);
+  text-align: center;
+  padding: 3px;
+}
+h2:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 49% 51%;
+  margin: 10px;
+}
+.label {
+  text-align: right;
+  align-self: center;
+  padding: 10px;
+}
+.input {
+  text-align: left;
+  align-self: center;
+  padding: 10px 0px;
+}
+.field {
+  width: 200px;
+  height: 15px;
+  padding: 5px;
+  border: 1px solid var(--lgray, #c0c0c0);
+}
+#input-drop {
+  display: grid;
+  margin: 10px;
+}
+#dropdown {
+  height: 28px;
+  padding: 2px;
+  border: 1px solid var(--lgray, #c0c0c0);
+}
+.col {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+.col li {
+  list-style-type: none;
+  text-align: left;
+  margin: 4px;
+}
+input[type="radio"], input[type="checkbox"] {
+  margin-right: 5px;
+}
+#input-box {
+  margin: 10px;
+}
+textarea {
+  width: 80%;
+  height: 100px;
+  margin: auto;
+}
+#submit {
+  background: var(--black, black);
+  border-radius: 4px;
+  color: var(--white, white);
+  height: 32px;
+  width: 80px;
+  margin: 10px;
+  border: 0px solid;
+}
+@media (max-width: 600px) {
+  #header, #title, #survey-form {
+    min-width: 300px;
+  }
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .label {
+    align-self: flex-start;
+    padding-left: 40px;
+  }
+  .input {
+    align-self: flex-start;
+    padding-left: 40px;
+  }
+  .col {
+    justify-content: flex-start;
+  }
+}

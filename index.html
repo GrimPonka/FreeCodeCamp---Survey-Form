@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </head>
+  <body>
+    <div id="header">
+      <h1 id="title">Attendee Survey Form</h1>
+      <p id="description">Please let us know how we can improve for future events</p>
+    </div>
+    <form id="survey-form" action="">
+      <h2>Personal Information</h2>
+      <div class="grid">
+        <div class="label">
+          <label id="name-label" for="name">Name: </label>
+        </div>
+        <div class="input">
+          <input id="name" name="name" class="field" type="text" required placeholder="Enter your name">
+        </div>
+        <div class="label">
+          <label id="email-label" for="email">Email: </label>
+        </div>
+        <div class="input">  
+          <input id="email" name="email" class="field" type="email" required placeholder="Enter your email">
+        </div>
+        <div class="label">
+          <label id="number-label" for="age">Age: </label>
+        </div>
+        <div class="input">
+          <input id="number" name="age" class="field" type="number" min="1" max="125" required placeholder="Age">
+        </div>
+      </div>
+      <h2>From where did you learn of the event?</h2>
+      <div class="grid">
+        <div class="label">
+          <label for="dropdown">Source: </label>
+        </div>
+        <div class="input">
+          <select id="dropdown" name="dropdown">
+            <option disabled value selected>Select an option</option>
+            <option value="1">Acquaintance</option>
+            <option value="2">Billboards</option>
+            <option value="3">Print Advertisements</option>
+            <option value="4">Radio Advertisements</option>
+            <option value="5">Social Media</option>
+            <option value="6">Video Advertisements</option>
+            <option value="7">Word of Mouth</option>
+          </select>
+        </div>
+      </div>
+      <h2>What ticket package did you purchase?</h2>
+      <div class="col">
+        <ul>
+          <li><label><input type="radio" name="radio" value="1"> Standard Ticket</label></li>
+          <li><label><input type="radio" name="radio" value="2"> Premium Package</label></li>
+          <li><label><input type="radio" name="radio" value="3"> VIP Package</label></li>
+        </ul>
+      </div>
+      <h2>Which of the following events did you attend and enjoy?</h2>
+      <div class="col">
+        <ul>
+          <li><label><input type="checkbox" name="checkbox" value="1">Meet & Greet</label></li>
+          <li><label><input type="checkbox" name="checkbox" value="2">Autograph Booth</label></li>
+          <li><label><input type="checkbox" name="checkbox" value="3">Art Seminar</label></li>
+          <li><label><input type="checkbox" name="checkbox" value="4">Live Concert</label></li>
+          <li><label><input type="checkbox" name="checkbox" value="5">Onstage Competition</label></li>
+          <li><label><input type="checkbox" name="checkbox" value="6">Showcase</label></li>
+        </ul>
+      </div>
+      <h2>Comments and Suggestions</h2>
+      <div id="input-box" class="col">
+        <textarea name="comments" placeholder="Enter comments here"></textarea>
+      </div>
+      <div class="col">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  <body>
+</html>
