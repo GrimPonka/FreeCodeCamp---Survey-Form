@@ -126,4 +126,7 @@ textarea {
   .col {
     justify-content: flex-start;
   }
+  .col:last-child {
+    justify-content: center;
+  }
 }
